@@ -9,7 +9,7 @@ export function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Thanks by{' '}
+          Thanks by.{' '}
           <img src="/vercel.svg" alt="Vercel Logo" className={classes.logo} />
         </a>
       </footer>
