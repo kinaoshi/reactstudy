@@ -1,6 +1,6 @@
 import { loadGetInitialProps } from "next/dist/next-server/lib/utils";
 import Head from "next/head";
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { Footer } from "src/components/Footer";
 import { Header } from "src/components/Header";
 import { Main } from "src/components/Main";
@@ -27,6 +27,19 @@ const handleClick = useCallback((e) =>  {
   e.preventDefault();
   alert(foo);
 }, []);
+useEffect(() => {
+  console.log('マウント時');
+document.body.style.backgroundColor = 'lightblue';
+
+return() => {
+  console.log('アンマウント時');
+
+document.body.style.backgroundColor = '';
+
+}
+},[]);
+
+
 
   return (
     <div className={styles.container}>
@@ -35,17 +48,7 @@ const handleClick = useCallback((e) =>  {
       </Head>
       <Header />
 
-      <a
-        href={"./about"}
-        onClick={handleClick}
-        // onClick={(e)=> handleClick(e, foo)}
-
-        // onClick={(e) => {
-        //     e.preventDefault();
-        //     console.log(e.target.href);
-        // }
-        // }
-      >
+      <a href={"./about"} onClick={handleClick}>
         ボタン
       </a>
       <Main page="index" />
