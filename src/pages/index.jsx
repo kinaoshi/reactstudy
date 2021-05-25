@@ -12,9 +12,8 @@ export default function Home() {
   const [isShow, setIsShow] = useState(true);
   const [array, setArray] = useState([]);
 
-  const handleClick = useCallback(() => {
-    if (count < 10) {
-      setCount((prevCount) => prevCount + 1);
+  const handleOnClick=()=>{
+    alert("次は15から")
     }
   }, [count]);
 
@@ -62,6 +61,8 @@ export default function Home() {
           return <li key={item}>{item}</li>;
         })}
       </ul>
+      <button onClick={handleOnClick}>進捗状況</button>
+
       <Main page="index" />
       <Footer />
     </div>
