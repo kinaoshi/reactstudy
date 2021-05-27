@@ -1,28 +1,24 @@
-
 import Head from "next/head";
-import {useCallback, useState } from "react";
 import { Footer } from "src/components/Footer";
 import { Header } from "src/components/Header";
 import { Main } from "src/components/Main";
-import { useBgLightBlue } from "src/hooks/useBgLightBlue";
-import { useCounter } from "src/hooks/useCounter";
-import { useInputArray } from "src/hooks/useInputArray";
 import styles from "src/styles/Home.module.css";
 
+export default function Home(props) {
+  const {
+    count,
+    isShow,
+    handleClick,
+    handleDisplay,
+    text,
+    array,
+    handleChange,
+    handleAdd,
+  } = props;
 
-
-
-
-export default function Home() {
-  const { count, isShow, handleClick, handleDisplay } = useCounter();
-  const { text, array, handleChange, handleAdd } = useInputArray();
-  useBgLightBlue();
-
-  const handleOnClick=()=>{
-    alert("次は15から")
-  }
-
-
+  const handleOnClick = () => {
+    alert("次は16から");
+  };
 
   return (
     <div className={styles.container}>
@@ -49,6 +45,3 @@ export default function Home() {
     </div>
   );
 }
-
-
-
