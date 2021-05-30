@@ -16,10 +16,6 @@ export default function Home(props) {
     handleAdd,
   } = props;
 
-  const handleOnClick = () => {
-    alert("次は16から");
-  };
-
   return (
     <div className={styles.container}>
       <Head>
@@ -38,7 +34,6 @@ export default function Home(props) {
           return <li key={item}>{item}</li>;
         })}
       </ul>
-      <button onClick={handleOnClick}>進捗状況</button>
 
       <Main page="index" />
       <Footer />
