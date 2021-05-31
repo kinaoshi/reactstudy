@@ -1,6 +1,6 @@
 import classes from "src/components/Headline/Headline.module.css";
 
-export function Headline(props) {
+export const Headline = (props) => {
   const handleOnClick = () => {
     alert("次は#17から");
   };
@@ -13,7 +13,7 @@ export function Headline(props) {
       </p>
       <button onClick={props.handleReduce}>減らす</button>
       <button onClick={handleOnClick}>進捗状況</button>
-      
+
     </div>
   );
 }
