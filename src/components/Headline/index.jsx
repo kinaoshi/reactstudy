@@ -2,7 +2,7 @@ import classes from "src/components/Headline/Headline.module.css";
 
 export const Headline = (props) => {
   const handleOnClick = () => {
-    alert("次は#18から");
+    alert("次は#22から");
   };
   return (
     <div>
