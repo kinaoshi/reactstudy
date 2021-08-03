@@ -14,11 +14,4 @@ import { Header } from "src/components/Header";
 }
 export default About;
 
-// const handleOnClick = () => {
-//   alert("次は#24から");
-// };
-// return (
-//   <div>
-//     <button onClick={handleOnClick}>進捗状況</button>
-//   </div>
-// );
+// 
