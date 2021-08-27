@@ -21,19 +21,3 @@ export const Header = () => {
   );
 };
 
-// .anchor:hover,
-// .anchor:focus,
-// .anchor:active {
-//   color: #0070f3;
-// }
-
-// padding: 8px 24px;
-//   display: inline-block;
-//   font-size: 1.2rem;
-
- /* width: 100%;
-  height: 100px;
-  border-bottom: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center; */

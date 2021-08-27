@@ -12,4 +12,5 @@ module.exports = {
 	"tailwindCSS.includeLanguages": {
 		plaintext: "vue",
 	},
+	"editor.quickSuggestions": { "strings": true },
 };
