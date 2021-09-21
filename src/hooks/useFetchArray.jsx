@@ -1,7 +1,7 @@
-import useSWR from "swr";
+import useSWRImmutable from "swr/immutable";
 
  const useFetchArray = (url) => {
-  const { data, error } = useSWR(url);
+  const { data, error } = useSWRImmutable(url);
 
   return {
     data,
@@ -21,8 +21,8 @@ export const usePosts = () => {
 export const usePostsByUserId = (id) => {
   return useFetchArray(id? `${API_URL}/posts?userId=${id}`:null);
  }
-//  users
 
+//  users
  export const useUsers = () => {
    return useFetchArray(`${API_URL}/users`);
  };
