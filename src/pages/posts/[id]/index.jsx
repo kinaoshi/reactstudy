@@ -1,5 +1,5 @@
 import { Header } from "src/components/Header";
-import { Post } from "src/components/Post";
+import { PostDetail } from "src/components/Post/PostDetail";
 
 
 const PostsId = () => {
@@ -7,7 +7,7 @@ const PostsId = () => {
     <div>
       
       <Header />
-      <Post />
+      <PostDetail />
     </div>
   );
 };
