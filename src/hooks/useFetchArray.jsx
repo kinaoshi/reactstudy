@@ -1,7 +1,7 @@
 import { API_URL } from "src/utils/const";
 import useSWRImmutable from "swr/immutable";
 
- const useFetchArray = (url) => {
+ export const useFetchArray = (url) => {
   const { data, error } = useSWRImmutable(url);
 
   return {
@@ -16,12 +16,12 @@ import useSWRImmutable from "swr/immutable";
 
 // post
 
-export const usePosts = () => {
-  return useFetchArray(`${API_URL}/posts`);
-};
-export const usePostsByUserId = (id) => {
-  return useFetchArray(id? `${API_URL}/posts?userId=${id}`:null);
- }
+// export const usePosts = () => {
+//   return useFetchArray(`${API_URL}/posts`);
+// };
+// export const usePostsByUserId = (id) => {
+//   return useFetchArray(id? `${API_URL}/posts?userId=${id}`:null);
+//  }
 
 //  users
  export const useUsers = () => {

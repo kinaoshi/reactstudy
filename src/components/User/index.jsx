@@ -1,4 +1,4 @@
-import { PostsByUserId } from "src/components/Posts/PostsByUserId";
+import { PostListByUserId} from "src/components/Post/PostListByUserId";
 import { useUser } from "src/hooks/useUser";
 
 export const UserComponent = () => {
@@ -25,7 +25,7 @@ export const UserComponent = () => {
 			</ul>
 			<h2 className="text-xl font-bold mt-10">投稿</h2>
 			<div className="mt-2">
-				<PostsByUserId id={data.id} />
+				<PostListByUserId id={data.id} />
 			</div>
 		</div>
 	);
