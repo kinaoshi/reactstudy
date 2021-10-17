@@ -1,7 +1,7 @@
 import "tailwindcss/tailwind.css";
 
 import Head from "next/head";
-import { Layout } from "../components/Layout";
+import { AppLayout } from "../layouts/AppLayout";
 import { SWRConfig } from "swr";
 
 const fetcher = async (...args) => {
@@ -21,9 +21,9 @@ const MyApp = ({ Component, pageProps }) => {
 					fetcher,
 				}}
 			>
-				<Layout>
+				<AppLayout>
 					<Component {...pageProps} />
-				</Layout>
+				</AppLayout>
 			</SWRConfig>
 		</>
 	);

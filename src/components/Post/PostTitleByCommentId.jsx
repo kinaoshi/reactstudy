@@ -23,4 +23,3 @@ export const PostTitleByCommentId = (props) => {
     </Link>
     );
 };
-// 　18:34から
